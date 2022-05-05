@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Galore</title>
+    <link rel="stylesheet" href="games.css">
+    <script src="games.js"></script>
+</head>
+<body>
+    <div class ="container-1" id="hare-arrow-wall">
+        <h1>Hare Arrow Wall</h1>
+        <p>Click to select your choice</p>
+        <div class="flex-box-haw" id="haw-images">
+            <img id="hare" src="images/hare.jpg" alt="picture of a hare" style="max-width: 100%; height: 150px;" onclick="hawGame(this)">
+            <img id="arrow" src="images/arrow.png" alt="picture of an arrow" style="max-width: 100%; height: 150px;" onclick="hawGame(this)">
+            <img id="wall" src="images/wall.jpg" alt="picture of a wall" style="max-width: 100%; height: 150px;" onclick="hawGame(this)">
+        </div>
+        <button class="btn btn-success" onclick="reload()">Play again</button>
+    </div>
+
+    <div class="container-2" id="rock-paper-sc">
+        <h1>Rock Paper Scissors</h1>
+        <div class="rps-img" id="rps-img-flex-box">
+            <img src="images/rock.jpg" id = "rock" alt="rock image" width="150" height="150" onclick="rpsGame(this)">
+            <img src="images/paper.png" id="paper" alt="paper image" width="150" height="150" onclick="rpsGame(this)">
+            <img src="images/scissors.png" id="scissors" alt="scissors image" width="150" height="150" onclick="rpsGame(this)">
+        </div>
+        <button class="btn btn-success" onclick="reload()">Play again</button>
+    </div>
+</body>
+</html>
